@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20px;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
