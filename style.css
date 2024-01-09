@@ -13,8 +13,8 @@ html{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 20px;
-    margin: 20px;
+    height: 35px;
+
     
 }
 
@@ -22,6 +22,7 @@ a{
     text-decoration: none;
     color: gray;
     transition: color 0.3s ease;
+    font-weight: bold;
 }
 
 a:hover{
@@ -34,7 +35,8 @@ li{
 
 nav{
     background-color: #fff;
-    position: sticky;
+    width: 100%;
+    position: static;
     top: 0;
     padding: 0 85px;
     display: flex;
@@ -42,12 +44,15 @@ nav{
     justify-content: space-between;
     height: 80px;
     box-shadow: 0 5px 88px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
 }
 
 nav .logo,
 footer .logo{
     display: flex;
     align-items: center;
+    
 }
 
 nav .logo a,
@@ -82,8 +87,9 @@ nav button{
 
 nav button:hover{
     background-color: navy;
-    border: navy;
+    border: red;
     color: #fff;
+    
 }
 
 nav button#MenuButton{
@@ -126,7 +132,7 @@ nav button#MenuButton{
 @media screen and (max-width: 576px) {
    
    nav{
-    font-size: 14px;
+    font-size: 10px;
     justify-content: space-between;
     padding: 5px;
     
@@ -136,5 +142,98 @@ nav button#MenuButton{
     font-size: 18px;
    }
 
-
+.top-content{
+    font-size: 12px;
 }
+
+  
+}
+
+.slider img{
+    width: 100%;
+    filter: brightness(50%);
+    height: 80vh;
+    object-fit: cover;
+    
+}
+
+h2{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 7rem;
+    top: 19rem;
+    padding: 0 1rem;
+}
+
+h5{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 7rem;
+    top: 23rem;
+    padding: 0 1rem;
+    width: 50%;
+    font-weight: lighter;
+}
+
+#introimg{
+    width: 40%;
+}
+
+#int{
+    width: 40%;
+    margin-top: 20vh;
+}
+
+.intro{
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+#mos{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+
+.card-contain{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    background-color: rgb(240, 251, 255);
+}
+  
+ .card{
+    width: 200px;
+    background-color: rgba(0, 0, 128, 0.242);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+ }
+
+ .card img{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+ }
+
+ .card-content{
+    padding: 16px;
+ }
+
+ .card-content h4{
+    font-size: 28px;
+    margin: 8px;
+ }
+
+ .card-content p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+ }
