@@ -25,6 +25,7 @@ a {
 
 a:hover {
     color: black;
+    text-decoration: underline;
 }
 
 li {
@@ -44,6 +45,12 @@ nav {
     box-shadow: 0 5px 88px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: all 1.3ms ease;
+}
+
+.logo{
+    width: 50%; 
+    gap:5px; 
+    position: relative;
 }
 
 nav .logo,
@@ -474,4 +481,67 @@ nav button#MenuButton {
 
     }
 
+    .card-name{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+}
+
+.servic-det{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gimg {
+	width: 100%;
+	display: block;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	transition: transform 1000ms;
+}
+
+ul {
+	list-style: none;
+	margin: 10px;
+	padding: 0;
+	display: grid;
+	gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	max-width: 100%;
+	width: 100%;
+    
+}
+
+figure {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+figure::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200%;
+	height: 200%;
+	background: rgba(0, 0, 0, 0.5);
+	transform-origin: center;
+	opacity: 0;
+	transform: scale(2);
+	transition: opacity 300ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	
+	figure::after {
+		border-radius: 50%;
+		opacity: 1;
+		transform: scale(0);
+		transition: transform 900ms;
+	}
+
+	a:is(:hover, :focus) img {
+		transform: scale(1.2);
+	}
 }
