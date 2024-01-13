@@ -90,7 +90,7 @@ nav button {
 }
 
 nav button:hover {
-    background-color: black;
+    background-color:#1c1e53 ;
     color: #fff;
 }
 
@@ -100,7 +100,76 @@ nav button#MenuButton {
     justify-content: center;
     font-size: 24px;
     padding: 7px;
-    
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.popup input[type="text"],
+.popup input[type="email"],
+.popup input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.popup button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.popup button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.popup button[type="button"] {
+    background-color: #f44336;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+}
+
+.popup button[type="button"]:hover {
+    background-color: #da190b;
 }
 
 .slider img {
@@ -292,14 +361,24 @@ nav button#MenuButton {
 
     nav.open ul {
         display: flex;
+        font-size: 13px;
     }
 
     nav button#MenuButton {
         display: flex;
+        margin: 0;
     }
 
     nav button#appoinment {
-        display: none;
+            display:block;
+            width: 130px;
+            height: 40px;
+            font-size: 10px;
+            padding: 5px;
+            margin: 0;
+            margin-left: -30%;
+            position: relative;
+            
     }
 
     #hinfo {
@@ -375,19 +454,33 @@ nav button#MenuButton {
 
     nav {
         font-size: 10px;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 5px;
+        gap: 10px;
+
     }
 
     nav ul{
-        gap: 20px;
-        justify-content: end;
+        gap: 10px;
+        justify-content: start;
         align-items: end;
         overflow:visible;
+        margin-left: -20px;
     }
 
     nav .logo a {
         font-size: 18px;
+    }
+
+    .navigationbar #appoinment{
+        display:block;
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+        padding: 5px;
+        margin-left: -30%;
+        flex-basis: 1px;
+
     }
 
     .top-content {
@@ -507,6 +600,10 @@ nav button#MenuButton {
     .card-name{
         font-size: 10px;
         margin-left: 5px;
+    }
+
+    .servic-det{
+        justify-content: space-around;
     }
 
 }
@@ -664,7 +761,55 @@ figure::after {
     padding: 10px;
   }
 
+  @media screen and (max-width: 1000px) {
+    .form .column {
+    
+      width: max-content;
+    }
 
+    .container {
+        margin: 25px;
+        height: max-content;
+        padding: 20px;
+        
+      }
+
+      .form .column {
+        display: block;  
+      }
+
+      .main{
+        flex-wrap: nowrap;
+        margin-left: 0px;
+      }
+
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .form .column {
+    
+      width: max-content;
+    }
+
+    .container {
+        margin: 25px;
+        height: max-content;
+        padding: 20px;
+        
+      }
+
+      .form .column {
+        display: block;  
+      }
+
+      .main{
+        flex-wrap: wrap;
+        margin-left: 0px;
+      }
+
+  }
 
   @media screen and (max-width: 500px) {
     .form .column {
