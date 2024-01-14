@@ -54,21 +54,34 @@
             <button id="appoinment">Appoinment</button>
             <div id="reg-form-container" class="popup-container">
               <div class="popup">
-                <h2>Registration Form</h2>
+                <h2>Make an Appoinment</h2>
                 <form id="reg-form">
-                  <label for="name">Name:</label>
+                  <label for="name">Name</label>
                   <input type="text" id="name" name="name" required />
 
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required />
+                  <label for="phoneNo">Phone No</label>
+                  <input type="text" id="phoneNo" name="phoneNo" required />
 
-                  <label for="password">Password:</label>
-                  <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    required
-                  />
+                  <label for="specialist">Choose a Specialist</label>
+                  <select name="specialist" id="specialist">
+                    <option value="Eye-Surgeon">Eye Surgeon</option>
+                    <option value="ENT-Surgeon">ENT Surgeon</option>
+                    <option value="Dental-Surgeon">Dental Surgeon</option>
+                    <option value="VOG">VOG</option>
+                  </select>
+
+                  <label for="doctor">Choose a Doctor</label>
+                  <select name="doctor" id="doctor">
+                    <option value="name1">Dr.Mohammed Gafoor</option>
+                    <option value="name1">Dr.Mohammed Razik</option>
+                    <option value="name1">Dr.Mohammed Riswan</option>
+                  </select>
+
+                  <label for="doctor">Appoinment Date</label>
+                  <input type="date">
+
+                  <label for="doctor">Message</label>
+                  <textarea name="" id="" cols="5" rows="3"></textarea>
 
                   <button type="submit">Submit</button>
                   <button type="button" id="close-reg-form-btn">Close</button>

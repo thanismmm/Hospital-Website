@@ -46,9 +46,9 @@ nav {
     transition: all 1.3ms ease;
 }
 
-.logo{
-    width: 50%; 
-    gap:5px; 
+.logo {
+    width: 50%;
+    gap: 5px;
     position: relative;
 }
 
@@ -90,7 +90,7 @@ nav button {
 }
 
 nav button:hover {
-    background-color:#1c1e53 ;
+    background-color: #1c1e53;
     color: #fff;
 }
 
@@ -119,7 +119,7 @@ nav button#MenuButton {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 500px;
@@ -133,15 +133,21 @@ nav button#MenuButton {
 .popup label {
     display: block;
     margin-bottom: 5px;
+    
 }
 
 .popup input[type="text"],
-.popup input[type="email"],
-.popup input[type="password"] {
+.popup input[type="date"],
+.popup select,
+.popup textarea
+{
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
+    border-radius: 8px;
 }
+
+
 
 .popup button[type="submit"] {
     background-color: #4CAF50;
@@ -276,6 +282,8 @@ nav button#MenuButton {
     align-items: center;
     justify-content: space-evenly;
     gap: 5%;
+    background-color: #1c1e53;
+    color: #fff;
 }
 
 .footer p {
@@ -301,7 +309,7 @@ nav button#MenuButton {
     font-size: 30px;
 }
 
-.vimi-head{
+.vimi-head {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -309,7 +317,7 @@ nav button#MenuButton {
 
 }
 
-.vision{
+.vision {
     display: flex;
     flex-direction: column;
     width: 20%;
@@ -322,7 +330,7 @@ nav button#MenuButton {
     box-sizing: border-box;
 }
 
-.circle{
+.circle {
     width: 50px;
     height: 50px;
     background-color: gray;
@@ -332,11 +340,11 @@ nav button#MenuButton {
     margin-bottom: 50px;
 }
 
-#v-cont{
+#v-cont {
     font-weight: 500;
 }
 
-.vision-mission{
+.vision-mission {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -370,15 +378,23 @@ nav button#MenuButton {
     }
 
     nav button#appoinment {
-            display:block;
-            width: 130px;
-            height: 40px;
-            font-size: 10px;
-            padding: 5px;
-            margin: 0;
-            margin-left: -30%;
-            position: relative;
-            
+        display: block;
+        width: 130px;
+        height: 40px;
+        font-size: 10px;
+        padding: 5px;
+        margin: 0;
+        margin-left: -30%;
+        position: relative;
+
+    }
+
+    .popup input[type="text"],
+    .popup input[type="date"],
+    .popup select,
+    .popup textarea
+    {
+    font-size: 13;
     }
 
     #hinfo {
@@ -390,27 +406,27 @@ nav button#MenuButton {
         font-size: 12px;
     }
 
-    .vision{
+    .vision {
         width: 40%;
         margin-left: 0;
         align-items: center;
         justify-content: center;
-        
-        
+
+
     }
-    
-    .circle{
+
+    .circle {
         width: 50px;
         height: 50px;
         margin-bottom: 50px;
     }
-    
-    #v-cont{
+
+    #v-cont {
         font-weight: 500;
         font-size: 13.5px;
     }
-    
-    .vision-mission{
+
+    .vision-mission {
         width: 100%;
         justify-content: center;
         gap: 35px;
@@ -419,11 +435,11 @@ nav button#MenuButton {
         margin-bottom: 5vh;
     }
 
-    #vmhead{
+    #vmhead {
         font-size: 20px;
     }
 
-    #v-head{
+    #v-head {
         font-size: medium;
         margin-bottom: 8px;
 
@@ -460,11 +476,11 @@ nav button#MenuButton {
 
     }
 
-    nav ul{
+    nav ul {
         gap: 10px;
         justify-content: start;
         align-items: end;
-        overflow:visible;
+        overflow: visible;
         margin-left: -20px;
     }
 
@@ -472,8 +488,8 @@ nav button#MenuButton {
         font-size: 18px;
     }
 
-    .navigationbar #appoinment{
-        display:block;
+    .navigationbar #appoinment {
+        display: block;
         width: 100px;
         height: 30px;
         font-size: 10px;
@@ -481,6 +497,25 @@ nav button#MenuButton {
         margin-left: -30%;
         flex-basis: 1px;
 
+    }
+
+    .popup input[type="text"],
+    .popup input[type="date"],
+    .popup select,
+    .popup textarea
+    {
+    font-size: 10px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    
+    }
+
+    .popup-container{
+        width: 50%;
+        margin-left: 12.5rem;
+        background-color: transparent;
     }
 
     .top-content {
@@ -558,27 +593,27 @@ nav button#MenuButton {
         margin: 10px;
     }
 
-    .vision{
+    .vision {
         width: 40%;
         margin-left: 0;
         align-items: center;
         justify-content: center;
-        
-        
+
+
     }
-    
-    .circle{
+
+    .circle {
         width: 30px;
         height: 30px;
         margin-bottom: 50px;
     }
-    
-    #v-cont{
+
+    #v-cont {
         font-weight: 500;
         font-size: 8px;
     }
-    
-    .vision-mission{
+
+    .vision-mission {
         width: 100%;
         justify-content: center;
         gap: 35px;
@@ -587,86 +622,87 @@ nav button#MenuButton {
         margin-bottom: 5vh;
     }
 
-    #vmhead{
+    #vmhead {
         font-size: 20px;
     }
 
-    #v-head{
+    #v-head {
         font-size: medium;
         margin-bottom: 8px;
 
     }
 
-    .card-name{
+    .card-name {
         font-size: 10px;
         margin-left: 5px;
     }
 
-    .servic-det{
+    .servic-det {
         justify-content: space-around;
     }
 
 }
 
-.servic-det{
+.servic-det {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .gimg {
-	width: 100%;
-	display: block;
-	aspect-ratio: 1 / 1;
-	object-fit: cover;
-	transition: transform 1000ms;
+    width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 1000ms;
 }
 
 ul {
-	list-style: none;
-	margin: 10px;
-	padding: 0;
-	display: grid;
-	gap: 0.5rem;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-	max-width: 100%;
-	width: 100%;
-    
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    max-width: 100%;
+    width: 100%;
+
 }
 
 figure {
-	margin: 0;
-	position: relative;
-	overflow: hidden;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
 }
 
 figure::after {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 200%;
-	height: 200%;
-	background: rgba(0, 0, 0, 0.5);
-	transform-origin: center;
-	opacity: 0;
-	transform: scale(2);
-	transition: opacity 300ms;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(0, 0, 0, 0.5);
+    transform-origin: center;
+    opacity: 0;
+    transform: scale(2);
+    transition: opacity 300ms;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-	
-	figure::after {
-		border-radius: 50%;
-		opacity: 1;
-		transform: scale(0);
-		transition: transform 900ms;
-	}
 
-	a:is(:hover, :focus) img {
-		transform: scale(1.2);
-	}
+    figure::after {
+        border-radius: 50%;
+        opacity: 1;
+        transform: scale(0);
+        transition: transform 900ms;
+    }
+
+    a:is(:hover, :focus) img {
+        transform: scale(1.2);
+    }
 }
 
-#Galhead{
+#Galhead {
     color: #1c1e53;
     display: flex;
     align-items: center;
@@ -686,31 +722,35 @@ figure::after {
     margin: 30px;
     margin-left: 15rem;
     border: 1px solid black;
-  }
-  .container header {
+}
+
+.container header {
     font-size: 1.5rem;
     color: #333;
     font-weight: 500;
     text-align: center;
-  }
-  .container .form {
+}
+
+.container .form {
     margin-top: 30px;
-  }
-  .form .input-box {
+}
+
+.form .input-box {
     width: 100%;
     margin-top: 20px;
-    
-  }
-  .input-box label {
+
+}
+
+.input-box label {
     color: #333;
-  }
+}
 
-  .main input::placeholder{
+.main input::placeholder {
     font-size: 14px;
-  }
+}
 
-  .form :where(.input-box input) {
-    
+.form :where(.input-box input) {
+
     height: 50px;
     width: 100%;
     outline: none;
@@ -721,16 +761,18 @@ figure::after {
     border-radius: 20px;
     padding: 0 15px;
     flex-wrap: wrap;
-  }
-  .input-box input:focus {
+}
+
+.input-box input:focus {
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  }
-  .form .column {
+}
+
+.form .column {
     display: flex;
     column-gap: 15px;
-  }
+}
 
-  .form button {
+.form button {
     height: 55px;
     width: 100%;
     color: #fff;
@@ -742,12 +784,13 @@ figure::after {
     transition: all 0.2s ease;
     background: rgb(130, 106, 251);
     border-radius: 18px;
-  }
-  .form button:hover {
-    background: rgb(88, 56, 250);
-  }
+}
 
-  .input-box textarea{
+.form button:hover {
+    background: rgb(88, 56, 250);
+}
+
+.input-box textarea {
     position: relative;
     height: 100px;
     width: 100%;
@@ -759,111 +802,108 @@ figure::after {
     border-radius: 6px;
     padding: 0 15px;
     padding: 10px;
-  }
+}
 
-  @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .form .column {
-    
-      width: max-content;
+
+        width: max-content;
     }
 
     .container {
         margin: 25px;
         height: max-content;
         padding: 20px;
-        
-      }
 
-      .form .column {
-        display: block;  
-      }
+    }
 
-      .main{
+    .form .column {
+        display: block;
+    }
+
+    .main {
         flex-wrap: nowrap;
         margin-left: 0px;
-      }
-
-  }
-
-
-
-  @media screen and (max-width: 768px) {
-    .form .column {
-    
-      width: max-content;
     }
 
-    .container {
-        margin: 25px;
-        height: max-content;
-        padding: 20px;
-        
-      }
-
-      .form .column {
-        display: block;  
-      }
-
-      .main{
-        flex-wrap: wrap;
-        margin-left: 0px;
-      }
-
-  }
-
-  @media screen and (max-width: 500px) {
-    .form .column {
-    
-      width: max-content;
-    }
-
-    .container {
-        margin: 25px;
-        height: max-content;
-        padding: 20px;
-        
-      }
-
-      .form .column {
-        display: block;  
-      }
-
-      .main{
-        flex-wrap: wrap;
-        margin-left: 0px;
-      }
-
-  }
-
-
-.main{
-    display: flex;
-    
 }
 
-.sec2{
+
+
+@media screen and (max-width: 768px) {
+    .form .column {
+
+        width: max-content;
+    }
+
+    .container {
+        margin: 25px;
+        height: max-content;
+        padding: 20px;
+
+    }
+
+    .form .column {
+        display: block;
+    }
+
+    .main {
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .form .column {
+
+        width: max-content;
+    }
+
+    .container {
+        margin: 25px;
+        height: max-content;
+        padding: 20px;
+
+    }
+
+    .form .column {
+        display: block;
+    }
+
+    .main {
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
+
+}
+
+
+.main {
+    display: flex;
+
+}
+
+.sec2 {
     align-items: flex-start;
     justify-content: center;
-    margin: 20px;
+    margin: 30px 10px;
 }
 
-.info{
+.info {
     margin-top: 20px;
 }
 
-.our-info{
+.our-info {
     margin-top: 50px;
 }
 
-.our-info #mail, #no, #loc{
+.our-info #mail,
+#no,
+#loc {
     font-size: 14px;
     display: flex;
     justify-content: flex-start;
     gap: 20px;
-    line-height: 40px;    
+    line-height: 40px;
 }
-
-
-
-
-

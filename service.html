@@ -15,9 +15,22 @@
   <div class="containar">
     <div class="head">
       <div class="top-content">
-        <h6>Contact No</h6>
-        <h6>Avaiable Date</h6>
-        <h6>Mail</h6>
+        <h6>
+          Contact No:
+          <p style="display: inline-block; font-weight: 500">011 5632564</p>
+        </h6>
+        <h6>
+          Avaiable Date:
+          <p style="display: inline-block; font-weight: 500">
+            Monday - Friday
+          </p>
+        </h6>
+        <h6>
+          Mail:
+          <p style="display: inline-block; font-weight: 500">
+            SolentHC@gmail.com
+          </p>
+        </h6>
       </div>
     </div>
     <div class="navigationbar">
@@ -33,7 +46,45 @@
           <li><a href=Gallary.html>Gallary</a></li>
           <li><a href=contact.html>Contact</a></li>
         </ul>
-        <button id="appoinment">Appoinment</button>
+        <div>
+          <button id="appoinment">Appoinment</button>
+          <div id="reg-form-container" class="popup-container">
+            <div class="popup">
+              <h2>Make an Appoinment</h2>
+              <form id="reg-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="phoneNo">Phone No</label>
+                <input type="text" id="phoneNo" name="phoneNo" required />
+
+                <label for="specialist">Choose a Specialist</label>
+                <select name="specialist" id="specialist">
+                  <option value="Eye-Surgeon">Eye Surgeon</option>
+                  <option value="ENT-Surgeon">ENT Surgeon</option>
+                  <option value="Dental-Surgeon">Dental Surgeon</option>
+                  <option value="VOG">VOG</option>
+                </select>
+
+                <label for="doctor">Choose a Doctor</label>
+                <select name="doctor" id="doctor">
+                  <option value="name1">Dr.Mohammed Gafoor</option>
+                  <option value="name1">Dr.Mohammed Razik</option>
+                  <option value="name1">Dr.Mohammed Riswan</option>
+                </select>
+
+                <label for="doctor">Appoinment Date</label>
+                <input type="date">
+
+                <label for="doctor">Message</label>
+                <textarea name="" id="" cols="5" rows="3"></textarea>
+
+                <button type="submit">Submit</button>
+                <button type="button" id="close-reg-form-btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </div>
         <button id="MenuButton" onclick="openMenu()">
           <i class='bx bx-menu'></i>
         </button>
