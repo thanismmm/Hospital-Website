@@ -27,6 +27,14 @@ a:hover {
     color: black;
 }
 
+.active {
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    line-height: 10px;
+  }
+
+
 li {
     list-style: none;
 }
