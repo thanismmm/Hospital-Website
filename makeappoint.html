@@ -1,49 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylee.css" />
+    <title>Logi Form</title>
+  </head>
+  <body>
+    <!-- The form -->
+    <div class="loginform">
 
-  <div id="reg-form-container" class="popup-container">
-    <div class="popup">
-      <h2>Make an Appoinment</h2>
-      <form method="post" action="appointInsert.php" id="reg-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
+      <img src="images/pexels-pixabay-356040.jpg" >
+      
+      <form action="appoint.html" class="form-container">
+        <h1>Login</h1>
 
-        <label for="phoneNo">Phone No</label>
-        <input type="text" id="phoneNo" name="phoneNo" required />
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
 
-        <label for="specialist">Choose a Specialist</label>
-        <select name="specialist" id="specialist">
-          <option value="Eye-Surgeon">Eye Surgeon</option>
-          <option value="ENT-Surgeon">ENT Surgeon</option>
-          <option value="Dental-Surgeon">Dental Surgeon</option>
-          <option value="VOG">VOG</option>
-        </select>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required/>
 
-        <label for="doctor">Choose a Doctor</label>
-        <select name="doctor" id="doctor">
-          <option value="Dr.Mohammed Gafoor">Dr.Mohammed Gafoor</option>
-          <option value="Dr.Mohammed Razik">Dr.Mohammed Razik</option>
-          <option value="Dr.Mohammed Riswan">Dr.Mohammed Riswan</option>
-        </select>
-
-        <label for="date">Appoinment Date</label>
-        <input type="date" name="date">
-
-        <label for="Message">Message</label>
-        <textarea name="Message" id="" cols="5" rows="3"></textarea>
-
-        <button type="submit">Submit</button>
-        <button type="button" id="close-reg-form-btn">Close</button>
+        <button type="submit" class="btn" onclick="document.location='appoint.html'">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Home Page
+        </button>
       </form>
     </div>
-  </div>
-    
-</body>
+  </body>
 </html>

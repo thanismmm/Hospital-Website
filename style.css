@@ -29,7 +29,6 @@ a:hover {
 
 .active {
     color: black;
-    text-decoration: underline;
     text-decoration-thickness: 5px;
     line-height: 10px;
   }
@@ -87,7 +86,8 @@ footer .top ul {
     padding: 20px;
 }
 
-nav button {
+nav #appoinment {
+    display:flex;
     color: #1c1e53;
     background-color: transparent;
     padding: 12px 16px;
@@ -95,9 +95,11 @@ nav button {
     border: 1px solid #1c1e53;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 20vh;
+    font-size: 15px;
 }
 
-nav button:hover {
+nav #appoinment:hover {
     background-color: #1c1e53;
     color: #fff;
 }
@@ -138,27 +140,34 @@ nav button#MenuButton {
     margin-top: 0;
 }
 
-.popup label {
+.form-container label {
     display: block;
-    margin-bottom: 5px;
-    
+    margin-bottom: 2px;
 }
 
-.popup input[type="text"],
-.popup input[type="date"],
-.popup select,
-.popup textarea
+.form-container input,select
 {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+    height: 40px;
+    padding: 10px;
     border-radius: 8px;
+    margin-bottom: 15px;
 }
 
+.form-container .btn {
+    background-color:#1c1e53 ;
+    color: white;
+    padding: 0;
+    cursor: pointer;
+    width: 49%;
+    margin-bottom:10px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
 
-
-.popup button[type="submit"] {
-    background-color: #4CAF50;
+/* .popup button[type="submit"] {
+    background-color: yellow;
     color: #fff;
     padding: 8px 15px;
     border: none;
@@ -184,7 +193,7 @@ nav button#MenuButton {
 
 .popup button[type="button"]:hover {
     background-color: #da190b;
-}
+} */
 
 .slider img {
     width: 100%;
@@ -378,23 +387,27 @@ nav button#MenuButton {
     nav.open ul {
         display: flex;
         font-size: 13px;
+        gap: 20px;
+
     }
 
     nav button#MenuButton {
         display: flex;
-        margin: 0;
+        width: 30px;
+        height: 30px;
+        right: 10px;
+       
     }
 
-    nav button#appoinment {
-        display: block;
-        width: 130px;
-        height: 40px;
-        font-size: 10px;
-        padding: 5px;
-        margin: 0;
-        margin-left: -30%;
-        position: relative;
-
+    nav #appoinment {
+        width: 100px;
+        height: 30px; 
+        font-size: 13px;
+        padding: 6px;
+        margin-bottom: -5vh;
+        margin-left: 10vh;
+        justify-content: center;
+        
     }
 
     .popup input[type="text"],
@@ -481,7 +494,6 @@ nav button#MenuButton {
         justify-content: space-between;
         padding: 5px;
         gap: 10px;
-
     }
 
     nav ul {
@@ -489,22 +501,27 @@ nav button#MenuButton {
         justify-content: start;
         align-items: end;
         overflow: visible;
-        margin-left: -20px;
+        margin-left: -15px;
     }
 
     nav .logo a {
         font-size: 18px;
     }
 
-    .navigationbar #appoinment {
-        display: block;
-        width: 100px;
+    .navigationbar #appoinment {     
+        width: 70px;
         height: 30px;
         font-size: 10px;
-        padding: 5px;
-        margin-left: -30%;
+        padding: 6px;
+        margin-bottom: -5vh;
         flex-basis: 1px;
+        margin-left: 7vh;
 
+    }
+
+    nav button#MenuButton{
+        width: 30px;
+        height: 30px;
     }
 
     .popup input[type="text"],
@@ -884,6 +901,13 @@ figure::after {
         margin-left: 0px;
     }
 
+    .open-button{
+        font-size: 10px;
+        max-width: 100px;
+        height: 50px;
+        padding: 0;
+    }
+
 }
 
 
@@ -915,3 +939,66 @@ figure::after {
     gap: 20px;
     line-height: 40px;
 }
+
+/* Button fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  cursor: pointer;
+  opacity: 0.9;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 150px;
+  z-index: 1;
+  border-radius: 15px;
+  border: 0.5px solid white;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 5;
+  
+}
+
+/* Add styles to the form container */
+.form-container {
+  padding: 10px;
+  background-color: white;
+  height: 82vh;
+  border: 1.5px solid black;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 500px) {
+    .form-container {
+        height: 75vh;
+      }
+
+      
+    .form-container label {
+        display: block;
+        margin-bottom: 2px;
+    }
+    
+    .form-container input,select
+    {
+        width: 100%;
+        height: 30px;
+        font-size: 8.5px;
+    }
+    
+    .form-container .btn {
+        width: 100%;
+        height: 30px;
+      }
+}
+/* Full-width input fields */
+
+
+
