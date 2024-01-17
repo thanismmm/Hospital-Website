@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylee.css" />
-    <title>Logi Form</title>
+    <title>Login Form</title>
   </head>
   <body>
     <!-- The form -->
@@ -12,20 +12,35 @@
 
       <img src="images/pexels-pixabay-356040.jpg" >
       
-      <form action="appoint.html" class="form-container">
-        <h1>Login</h1>
+      <form action="" class="form-container">
+        <h1>Sign in</h1>
 
         <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required />
+        <input type="text" placeholder="Enter Email" name="email" required id="email" />
 
         <label for="password"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="password" required/>
+        <input type="password" placeholder="Enter Password" name="password" required id="password"/>
 
-        <button type="submit" class="btn" onclick="document.location='appoint.html'">Login</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">
+        <button type="submit" class="btn" onclick="dashbord()">Login</button>
+        <button type="button" class="btn cancel" onclick="document.location.href='index.html'">
           Home Page
         </button>
       </form>
     </div>
+    <script>
+
+      function dashbord() {
+
+        var uid = document.getElementById("email").value
+        var pass = document.getElementById("password").value
+        if (uid == "admin" && pass == "123") {
+          alert("Successfully login")
+        }
+        else{
+          alert("login faild")
+        }
+        // window.location.replace("admin-dashbord.html")
+      }
+    </script>
   </body>
 </html>
