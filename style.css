@@ -944,16 +944,21 @@ figure::after {
 .open-button {
   background-color: #555;
   color: white;
-  padding: 16px 20px;
+  padding: 10px;
   cursor: pointer;
   opacity: 0.9;
   position: fixed;
   bottom: 23px;
   right: 28px;
-  width: 150px;
+  width:fit-content ;
   z-index: 1;
   border-radius: 15px;
   border: 0.5px solid white;
+}
+
+.open-button:hover {
+  opacity: 1;
+  transition: 0.5ms ease;
 }
 
 /* The popup form - hidden by default */

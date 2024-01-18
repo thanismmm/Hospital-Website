@@ -79,9 +79,9 @@ while($row = mysqli_fetch_assoc($result))
 	<td><?php print $row["Specialization"]; ?></td>
 	<td><?php print $row["Visit_Day"]; ?></td>
 	<td><?php print $row["Time"]; ?></td>
-	<td><a href="delete.php?id=<?php print $row["userID"]; ?>">Delete</a></td>
-	<td><a href="updateform.php?id=<?php print $row["userID"]; ?>">Update</a></td>
-	<td><a href="insertcourse.php?id=<?php print $row["userID"]; ?>">Insert</a></td>
+	<td><a href="delete.php?id=<?php print $row["Doc_ID"]; ?>">Delete</a></td>
+	<td><a href="updateform.php?id=<?php print $row["Doc_ID"]; ?>">Update</a></td>
+	<td><a href="insertcourse.php?id=<?php print $row["Doc_ID"]; ?>">Insert</a></td>
 </tr>
 
 <?php

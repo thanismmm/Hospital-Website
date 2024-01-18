@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Update Course</title>
+	<title>Update Doctor Detail</title>
 </head>
 <body>
 
@@ -11,13 +11,16 @@ $id = $_GET["id"];
 
 require_once("dbcon.php");
 
-$query = "SELECT * FROM credential WHERE userID = '$id'";
+$query = "SELECT * FROM doctor_detail WHERE Doc_ID = '$id'";
 
 $result = mysqli_query($connection,$query);
 
 while ($row = mysqli_fetch_assoc($result))
 {
-	$pword = $row["Password"];
+	$dname = $row["Doctor_name"];
+	$ds = $row["Specialization"];
+	$dvd = $row["Visit_Day"];
+	$dvh = $row["Time"];
 
 }
 
@@ -27,16 +30,28 @@ while ($row = mysqli_fetch_assoc($result))
 
 	<form method="POST" action="update.php">
 		<p>
-			Course ID:<br>
-			<input type="text" value="<?php print $id; ?>" name="cid"  required="true" readonly="true">
+			ID:<br>
+			<input type="text" value="<?php print $id; ?>" name="did"  required="true" readonly="true">
 		</p>
 		<p>
-			Course Name:<br>
-			<input type="text" value="<?php print $pword; ?>" name="cname"  required="true">
+			Doctor Name:<br>
+			<input type="text" value="<?php print $dname; ?>" name="dname"  required="true">
+		</p>
+		<p>
+			Specialization:<br>
+			<input type="text" value="<?php print $ds; ?>" name="ds"  required="true" readonly="true">
+		</p>
+		<p>
+			Visiting Day:<br>
+			<input type="text" value="<?php print $dvd; ?>" name="dvisitd"  required="true">
+		</p>
+		<p>
+			Visiting Hour:<br>
+			<input type="text" value="<?php print $dvh; ?>" name="dvisith"  required="true">
 		</p>
 		<p>
 			<input type="reset" value="Clear">
-			<input type="submit" value="Update Course">
+			<input type="submit" value="Update Doc-Detail">
 		</p>
 	</form>
 
