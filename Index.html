@@ -1,198 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <div class="containar">
-      <div class="head">
-        <div class="top-content">
-          <h6>
-            Contact No:
-            <p style="display: inline-block; font-weight: 500">011 5632564</p>
-          </h6>
-          <h6>
-            Avaiable Date:
-            <p style="display: inline-block; font-weight: 500">
-              Monday - Friday
-            </p>
-          </h6>
-          <h6>
-            Mail:
-            <p style="display: inline-block; font-weight: 500">
-              SolentHC@gmail.com
-            </p>
-          </h6>
-        </div>
-      </div>
-      <div class="navigationbar">
-        <nav>
-          <div class="logo">
-            <img src="images/logo.jpg" />
-            <h4>Solent Health Care</h4>
-          </div>
-          <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="Gallary.html">Gallary</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div>
-            <div class="appoinment-btn">
-              <button class="open-button" onclick="openForm()">
-                Get Appoinment
-              </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <title>Document</title>
+</head>
 
-              <!-- The form -->
-              <div class="form-popup" id="myForm">
-                <form action="php/appointInsert.php" method="post" class="form-container" >
-                  <h1>Get Appointment</h1>
-
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" required />
-
-                  <label for="phoneNo">Phone No</label>
-                  <input type="text" id="phoneNo" name="phoneNo" required />
-
-                  <label for="specialist">Choose a Specialist</label>
-                  <select name="specialist" id="specialist">
-                    <option value="Eye-Surgeon">Eye Surgeon</option>
-                    <option value="ENT-Surgeon">ENT Surgeon</option>
-                    <option value="Dental-Surgeon">Dental Surgeon</option>
-                    <option value="VOG">VOG</option>
-                  </select>
-
-                  <label for="doctor">Choose a Doctor</label>
-                  <select name="doctor" id="doctor">
-                    <option value="Dr.Mohammed Gafoor">Dr.Mohammed Gafoor</option>
-                    <option value="Dr.Mohammed Razik">Dr.Mohammed Razik</option>
-                    <option value="Dr.Mohammed Riswan">Dr.Mohammed Riswan</option>
-                  </select>
-
-                  <label for="doctor">Appoinment Date</label>
-                  <input type="date" name="date"/>
-
-                  <button type="submit" class="btn">Submit</button>
-                  <button type="button" class="btn cancel" onclick="closeForm()">
-                    Close
-                  </button>
-                </form>
-              </div>
-            </div>
-            <a id="appoinment" href="makeappoint.html">Login Here</a>
-            <button id="MenuButton" onclick="openMenu()">
-              <i class="bx bx-menu"></i>
-            </button>
-          </div>
-        </nav>
-      </div>
-      <div class="slider">
-        <img src="images/Doctor.jpg" />
-      </div>
-      <h2 id="slidetext">Solent Health Care International pvt.</h2>
-      <h5 id="slide-cont">
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui
-        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-        et quas molestias excepturi sint occaecati cupiditate non provident,
-        similique sunt in culpa qui officia deserunt mollitia animi,
-      </h5>
-
-      <div class="int-head">
-        <h4 id="i-head">Welcome to Solent Health Care</h4>
-      </div>
-      <div class="intro">
-        <h6 id="int">
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-          et quas molestias
+<body>
+  <div class="containar">
+    <div class="head">
+      <div class="top-content">
+        <h6>
+          Contact No:
+          <p style="display: inline-block; font-weight: 500">011 5632564</p>
         </h6>
-        <img src="images/logo.jpg" id="introimg" />
+        <h6>
+          Avaiable Date:
+          <p style="display: inline-block; font-weight: 500">
+            Monday - Friday
+          </p>
+        </h6>
+        <h6>
+          Mail:
+          <p style="display: inline-block; font-weight: 500">
+            SolentHC@gmail.com
+          </p>
+        </h6>
       </div>
+    </div>
+    <div class="navigationbar">
+      <nav>
+        <div class="logo">
+          <img src="images/logo.jpeg" />
+          <h4>Solent Health Care</h4>
+        </div>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="Gallary.html">Gallary</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div>
+          <div class="appoinment-btn">
+            <button class="open-button" onclick="openForm()">
+              Get Appoinment
+            </button>
 
-      <div class="doc-detail">
-        <h3 id="mos">Meet our specialist</h3>
-        <div class="card-contain">
-          <div class="card">
-            <img src="images/doctor.png" />
-            <div class="card-content">
-              <h4>Name</h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+            <!-- The form -->
+            <div class="form-popup" id="myForm">
+              <form action="php/appointInsert.php" method="post" class="form-container">
+                <h1>Get Appointment</h1>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="phoneNo">Phone No</label>
+                <input type="text" id="phoneNo" name="phoneNo" required />
+
+                <label for="specialist">Choose a Specialist</label>
+                <select name="specialist" id="specialist">
+                  <option value="Eye-Surgeon">Eye Surgeon</option>
+                  <option value="ENT-Surgeon">ENT Surgeon</option>
+                  <option value="Dental-Surgeon">Dental Surgeon</option>
+                  <option value="Dental-Surgeon">Heart Surgeon</option>
+                  <option value="VOG">VOG</option>
+                </select>
+
+                <label for="doctor">Choose a Doctor</label>
+                <select name="doctor" id="doctor">
+                  <option value="Dr.Mohammed Gafoor">Dr.Mohammed Gafoor</option>
+                  <option value="Dr.Mohammed Razik">Dr.Mohammed Razik</option>
+                  <option value="Dr.Mohammed Riswan">Dr.Mohammed Riswan</option>
+                  <option value="Dr.Mohammed Riswan">Dr.Kumara Dissa</option>
+                </select>
+
+                <label for="doctor">Appoinment Date</label>
+                <input type="date" name="date" />
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">
+                  Close
+                </button>
+              </form>
             </div>
           </div>
-          <div class="card">
-            <img src="images/doctor.png" />
-            <div class="card-content">
-              <h4>Name</h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/doctor.png" />
-            <div class="card-content">
-              <h4>Name</h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/doctor.png" />
-            <div class="card-content">
-              <h4>Name</h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/doctor.png" />
-            <div class="card-content">
-              <h4>Mr.Mohammed Gafoor</h4>
-              <p>ENT-Surgeon</p>
-              <p>Visiting at Mon - Wed 9-12am</p>
-            </div>
+          <a id="appoinment" href="makeappoint.html">Login Here</a>
+          <button id="MenuButton" onclick="openMenu()">
+            <i class="bx bx-menu"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div class="slider">
+      <img src="images/Doctor.jpg" />
+    </div>
+    <h2 id="slidetext">Solent Health Care International pvt.</h2>
+    <h5 id="slide-cont">
+      Combines cutting-edge facilities with compassionate service.
+      Its modern diagnostic centers and skilled medical staff prioritize patient well-being.
+      Commitment to safety and quality standards establishes it as a trusted haven for
+      comprehensive and reliable healthcare, epitomizing excellence in the community.
+    </h5>
+
+    <div class="int-head">
+      <h4 id="i-head">Welcome to Solent Health Care</h4>
+    </div>
+    <div class="intro">
+      <h6 id="int">
+        Welcome to Solent Health Care, where excellence meets compassion in the realm of private healthcare.
+        Our state-of-the-art facility is equipped with the latest technology, ensuring top-notch medical services.
+        Committed to patient well-being, our skilled and dedicated team provides personalized care in a modern and
+        comforting environment. Trust Solent Health Care for a holistic and reliable healthcare experience.
+      </h6>
+      <img src="images/intropic.jpeg" id="introimg" />
+    </div>
+
+    <div class="doc-detail">
+      <h3 id="mos">Meet our specialist</h3>
+      <div class="card-contain">
+        <div class="card">
+          <img src="images/doctor.png" />
+          <div class="card-content">
+            <h4>Mr.Mohammed Gafoor(MBBS)</h4>
+            <p>ENT-Surgeon</p>
+            <p>Visiting at Mon - Wed 9-12am</p>
           </div>
         </div>
-      </div>
-      <div class="footer">
-        <div class="hs-info">
-          <h6 id="hinfo">Solent Health Care</h6>
-          <p>
-            ducimus qui blanditiis praesentium voluptatum deleniti atque
-            corrupti quos dolores et quas molestias excepturi sint occaecati
-            cupiditate non provident, similique sunt in culpa qui officia
-            deserunt mollitia animi
-          </p>
+        <div class="card">
+          <img src="images/doctor.png" />
+          <div class="card-content">
+            <h4>Mr.Mohammed Razik(MBBS)</h4>
+            <p>Eye-Sergeon</p>
+            <p>Visiting at Mon - Thu 9-12am</p>
+          </div>
         </div>
-        <div class="media">
-          <h6 id="hinfo">Media & Links</h6>
-          <p>
-            ducimus qui blanditiis praesentium voluptatum deleniti atque
-            corrupti quos dolores et quas molestias excepturi sint occaecati
-            cupiditate non provident, similique sunt in culpa qui officia
-            deserunt mollitia animi
-          </p>
+        <div class="card">
+          <img src="images/doctor.png" />
+          <div class="card-content">
+            <h4>Mr.Mohammed Rizwan(MBBS)</h4>
+            <p>Dental-Sergeon</p>
+            <p>Visiting at Mon - Fri 8.30-10.30am</p>
+          </div>
         </div>
-        <div class="updates">
-          <h6 id="hinfo">Updates</h6>
-          <p>
-            ducimus qui blanditiis praesentium voluptatum deleniti atque
-            corrupti quos dolores et quas molestias excepturi sint occaecati
-            cupiditate non provident, similique sunt in culpa qui officia
-            deserunt mollitia animi
-          </p>
+        <div class="card">
+          <img src="images/doctor.png" />
+          <div class="card-content">
+            <h4>Mr.Mohammed Sabeer(MBBS)</h4>
+            <p>VOG</p>
+            <p>Visiting at Mon - Thur 9am-4pm</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/doctor.png" />
+          <div class="card-content">
+            <h4>Mr.Kumara dissa(MBBS)</h4>
+            <p>Heart-Surgeon</p>
+            <p>Visiting at Monday at 12.30-4pm</p>
+          </div>
         </div>
       </div>
     </div>
-    <script src="js/script.js"></script>
-  </body>
+    <hr>
+    <div class="footer">
+      <div class="hs-info">
+        <h6 id="hinfo">Solent Health Care</h6>
+        <p>
+          If you need a doctor urgently outside of Solent Hospital opening hours, call emergency appointment number for
+          emergency service.
+          Solent Hospital Sammanthurai. </p>
+        <p>info@SolentHC.lk</p>
+        <p>+94 763075074</p>
+
+      </div>
+      <div class="media">
+        <h6 id="hinfo">Media & Links</h6>
+        <p style="width: 250px;">
+        <p><a href="https://www.health.gov.lk/">Ministry of Health and Indigenous</a></p>
+        <p><a href="http://www.nhsl.health.gov.lk/">National Hospital of Sri Lanka</a></p>
+        <p><a href="https://slmc.gov.lk/en/">Sri Lanka Medical Council</a></p>
+        <p><a href="https://www.who.int/">world health organization</a></p>
+        </p>
+      </div>
+      <div class="updates">
+        <h6 id="hinfo">Updates</h6>
+        <p>
+          Gain valuable health tips, patient stories,
+          and in-depth knowledge about various medical conditions.
+          Stay connected with Solent Health Care's informative blog.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

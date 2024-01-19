@@ -47,11 +47,16 @@
           <li><a href=contact.html>Contact</a></li>
         </ul>
         <div>
-          <button id="appoinment">Appoinment</button>
-          <div id="reg-form-container" class="popup-container">
-            <div class="popup">
-              <h2>Make an Appoinment</h2>
-              <form id="reg-form">
+          <div class="appoinment-btn">
+            <button class="open-button" onclick="openForm()">
+              Get Appoinment
+            </button>
+
+            <!-- The form -->
+            <div class="form-popup" id="myForm">
+              <form action="php/appointInsert.php" method="post" class="form-container">
+                <h1>Get Appointment</h1>
+
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required />
 
@@ -68,26 +73,26 @@
 
                 <label for="doctor">Choose a Doctor</label>
                 <select name="doctor" id="doctor">
-                  <option value="name1">Dr.Mohammed Gafoor</option>
-                  <option value="name1">Dr.Mohammed Razik</option>
-                  <option value="name1">Dr.Mohammed Riswan</option>
+                  <option value="Dr.Mohammed Gafoor">Dr.Mohammed Gafoor</option>
+                  <option value="Dr.Mohammed Razik">Dr.Mohammed Razik</option>
+                  <option value="Dr.Mohammed Riswan">Dr.Mohammed Riswan</option>
                 </select>
 
                 <label for="doctor">Appoinment Date</label>
-                <input type="date">
+                <input type="date" name="date" />
 
-                <label for="doctor">Message</label>
-                <textarea name="" id="" cols="5" rows="3"></textarea>
-
-                <button type="submit">Submit</button>
-                <button type="button" id="close-reg-form-btn">Close</button>
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">
+                  Close
+                </button>
               </form>
             </div>
           </div>
+          <a id="appoinment" href="makeappoint.html">Login Here</a>
+          <button id="MenuButton" onclick="openMenu()">
+            <i class="bx bx-menu"></i>
+          </button>
         </div>
-        <button id="MenuButton" onclick="openMenu()">
-          <i class='bx bx-menu'></i>
-        </button>
       </nav>
 
       <div class="page-head">
@@ -103,10 +108,12 @@
           atque
           corrupti quos dolores et quas molestias
         </h6>
-        <img src="images/logo.jpg" id="introimg">
+        <img src="images/logo.jpeg" id="introimg">
       </div>
 
-      <div class="vimi-head"><h2 id="vmhead">Our Vision - Mission</h2></div>
+      <div class="vimi-head">
+        <h2 id="vmhead">Our Vision - Mission</h2>
+      </div>
       <div class="vision-mission">
         <div class="vision">
           <div class="circle"></div>
@@ -123,28 +130,36 @@
             vitae asperiores.</h5>
         </div>
       </div>
-<hr>
+
+      <hr>
       <div class="footer">
         <div class="hs-info">
           <h6 id="hinfo">Solent Health Care</h6>
-          <p>ducimus qui blanditiis praesentium voluptatum deleniti atque
-            corrupti quos dolores et quas molestias excepturi sint occaecati
-            cupiditate non provident, similique sunt in culpa qui officia
-            deserunt mollitia animi</p>
+          <p>
+            If you need a doctor urgently outside of Solent Hospital opening hours, call emergency appointment number
+            for
+            emergency service.
+            Solent Hospital Sammanthurai. </p>
+          <p>info@SolentHC.lk</p>
+          <p>+94 763075074</p>
+
         </div>
         <div class="media">
           <h6 id="hinfo">Media & Links</h6>
-          <p>ducimus qui blanditiis praesentium voluptatum deleniti atque
-            corrupti quos dolores et quas molestias excepturi sint occaecati
-            cupiditate non provident, similique sunt in culpa qui officia
-            deserunt mollitia animi</p>
+          <p style="width: 250px;">
+          <p><a href="https://www.health.gov.lk/">Ministry of Health and Indigenous</a></p>
+          <p><a href="http://www.nhsl.health.gov.lk/">National Hospital of Sri Lanka</a></p>
+          <p><a href="https://slmc.gov.lk/en/">Sri Lanka Medical Council</a></p>
+          <p><a href="https://www.who.int/">world health organization</a></p>
+          </p>
         </div>
         <div class="updates">
           <h6 id="hinfo">Updates</h6>
-          <p>ducimus qui blanditiis praesentium voluptatum deleniti atque
-            corrupti quos dolores et quas molestias excepturi sint occaecati
-            cupiditate non provident, similique sunt in culpa qui officia
-            deserunt mollitia animi</p>
+          <p>
+            Gain valuable health tips, patient stories,
+            and in-depth knowledge about various medical conditions.
+            Stay connected with Solent Health Care's informative blog.
+          </p>
         </div>
       </div>
 

@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/stylee.css" />
-    <title>Login Form</title>
-  </head>
-  <body>
-    <!-- The form -->
-    <div class="loginform">
 
-      <img src="images/pexels-pixabay-356040.jpg" >
-      
-      <form action="php/cred.php" method="post" class="form-container">
-        <h1>Sign in</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/stylee.css" />
+  <title>Login Form</title>
+</head>
 
-        <label for="email"><b>Name</b></label>
-        <input type="text" placeholder="Enter user name" name="userName" required id="userName" />
+<body>
+  <!-- The form -->
+  <div class="loginform">
 
-        <label for="password"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="password" required id="password"/>
+    <img src="images/pexels-pixabay-356040.jpg">
 
-        <button type="submit" class="btn">Login</button>
-        <button type="button" class="btn cancel" onclick="document.location.href='index.html'">
-          Home Page
-        </button>
-      </form>
-    </div>
-  </body>
+    <form action="php/cred.php" method="post" class="form-container">
+      <h1>Sign in</h1>
+
+      <label for="email"><b>Name</b></label>
+      <input type="text" placeholder="Enter user name" name="userName" required id="userName" />
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required id="password" />
+
+      <button type="submit" class="btn">Login</button>
+      <button type="button" class="btn cancel" onclick="document.location.href='index.html'">
+        Home Page
+      </button>
+    </form>
+  </div>
+</body>
+
 </html>
