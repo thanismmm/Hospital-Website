@@ -16,9 +16,9 @@ $result = mysqli_query($connection, $query);
 
 if ($result)
 {
-	print "Course added successfully";
+	print "added successfully";
 ?>
-	<p><a href="course.php">Check All Courses Here</a></p>
+	<p><a href="admindata.php">Check Here</a></p>
 <?php
 }
 ?>

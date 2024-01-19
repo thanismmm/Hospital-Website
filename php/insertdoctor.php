@@ -1,8 +1,3 @@
-<style>
-	body{
-		
-	}
-</style>
 
 	<h2>Add New Doctor Information</h2>
 

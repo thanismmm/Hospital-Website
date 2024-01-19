@@ -19,7 +19,7 @@ if ($result)
 {
 	print "Doctor Info Updated successfully";
 ?>
-	<p><a href="testdata.php">Check All info Here</a></p>
+	<p><a href="admindata.php">Check Here</a></p>
 <?php
 }
 ?>

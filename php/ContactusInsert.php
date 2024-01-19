@@ -15,7 +15,7 @@ $result = mysqli_query($connection, $query);
 if ($result)
 {
 	echo '<script>alert("Successfully Submited!");</script>';
-	echo '<script>window.location.href = "contact.html";</script>';
+	echo '<script>window.location.href = "../contact.html";</script>';
 ?>
 
 <?php

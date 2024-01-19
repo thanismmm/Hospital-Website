@@ -22,10 +22,10 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 if ($success) {
     echo '<script>alert("Welcome Come Back!");</script>';
-    echo '<script>window.location.href = "testdata.php";</script>';
+    echo '<script>window.location.href = "admindata.php";</script>';
 } else {
     echo '<script>alert("Invalid User Name & Password!");</script>';
-    echo '<script>window.location.href = "makeappoint.html";</script>';
+    echo '<script>window.location.href = "../makeappoint.html";</script>';
 
 }
 

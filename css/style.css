@@ -1,43 +1,35 @@
 html {
     scroll-behavior: smooth;
 }
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 .top-content {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 35px;
 }
-
 a {
     text-decoration: none;
     color: gray;
     transition: color 0.3s ease;
     font-weight: bold;
 }
-
 a:hover {
     color: black;
 }
-
 .active {
     color: black;
     text-decoration-thickness: 5px;
     line-height: 10px;
-  }
-
-
+}
 li {
     list-style: none;
 }
-
 nav {
     background-color: #fff;
     width: 100%;
@@ -52,40 +44,29 @@ nav {
     overflow: hidden;
     transition: all 1.3ms ease;
 }
-
 .logo {
     width: 50%;
     gap: 5px;
     position: relative;
 }
-
-nav .logo,
-footer .logo {
+nav .logo, footer .logo {
     display: flex;
     align-items: center;
-
 }
-
-nav .logo a,
-footer .logo a {
+nav .logo a, footer .logo a {
     margin-left: 8px;
     font-weight: bold;
     font-size: 20px;
 }
-
-nav .logo img,
-footer .logo img {
+nav .logo img, footer .logo img {
     width: 40px;
     height: 40px;
 }
-
-nav ul,
-footer .top ul {
+nav ul, footer .top ul {
     display: flex;
     gap: 40px;
     padding: 20px;
 }
-
 nav #appoinment {
     display:flex;
     color: #1c1e53;
@@ -99,12 +80,10 @@ nav #appoinment {
     font-size: 14px;
     width: max-content;
 }
-
 nav #appoinment:hover {
     background-color: #1c1e53;
     color: #fff;
 }
-
 nav button#MenuButton {
     display: none;
     align-items: center;
@@ -112,7 +91,6 @@ nav button#MenuButton {
     font-size: 24px;
     padding: 7px;
 }
-
 .popup-container {
     display: none;
     position: fixed;
@@ -123,7 +101,6 @@ nav button#MenuButton {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
-
 .popup {
     position: absolute;
     top: 50%;
@@ -136,25 +113,20 @@ nav button#MenuButton {
     max-width: 500px;
     width: 100%;
 }
-
 .popup h2 {
     margin-top: 0;
 }
-
 .form-container label {
     display: block;
     margin-bottom: 2px;
 }
-
-.form-container input,select
-{
+.form-container input,select {
     width: 100%;
     height: 40px;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 15px;
 }
-
 .form-container .btn {
     background-color:#1c1e53 ;
     color: white;
@@ -164,9 +136,7 @@ nav button#MenuButton {
     margin-bottom:10px;
     height: 40px;
     border-radius: 10px;
-  }
-  
-
+}
 /* .popup button[type="submit"] {
     background-color: yellow;
     color: #fff;
@@ -176,11 +146,9 @@ nav button#MenuButton {
     cursor: pointer;
     float: right;
 }
-
 .popup button[type="submit"]:hover {
     background-color: #45a049;
 }
-
 .popup button[type="button"] {
     background-color: #f44336;
     color: #fff;
@@ -191,11 +159,10 @@ nav button#MenuButton {
     float: right;
     margin-right: 10px;
 }
-
 .popup button[type="button"]:hover {
     background-color: #da190b;
-} */
-
+}
+*/
 .slider img {
     width: 100%;
     filter: brightness(50%);
@@ -203,7 +170,6 @@ nav button#MenuButton {
     object-fit: cover;
     object-position: 0 -50px;
 }
-
 #slidetext {
     position: absolute;
     color: rgb(255, 255, 255);
@@ -211,7 +177,6 @@ nav button#MenuButton {
     top: 19rem;
     padding: 0 1rem;
 }
-
 #slide-cont {
     position: absolute;
     color: rgb(255, 255, 255);
@@ -221,7 +186,6 @@ nav button#MenuButton {
     width: 50%;
     font-weight: lighter;
 }
-
 #i-head {
     display: flex;
     margin-top: 50px;
@@ -231,23 +195,19 @@ nav button#MenuButton {
     justify-content: center;
     font-size: large;
 }
-
 #introimg {
     width: 40%;
 }
-
 #int {
     width: 40%;
     margin-top: 15vh;
     font-size: 15px;
 }
-
 .intro {
     display: flex;
     padding: 20px;
     justify-content: space-evenly;
 }
-
 #mos {
     display: flex;
     width: 100%;
@@ -255,7 +215,6 @@ nav button#MenuButton {
     justify-content: center;
     margin-top: 30px;
 }
-
 .card-contain {
     display: flex;
     justify-content: center;
@@ -263,7 +222,6 @@ nav button#MenuButton {
     margin-top: 30px;
     background-color: rgb(240, 251, 255);
 }
-
 .card {
     width: 200px;
     background-color: rgba(0, 0, 128, 0.242);
@@ -272,28 +230,23 @@ nav button#MenuButton {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 20px;
 }
-
 .card img {
     width: 100%;
     height: auto;
     margin-top: 10px;
 }
-
 .card-content {
     padding: 16px;
 }
-
 .card-content h4 {
     font-size: 20px;
     margin: 8px;
 }
-
 .card-content p {
     color: #666;
     font-size: 15px;
     line-height: 1.3;
 }
-
 .footer {
     display: flex;
     padding: 2rem;
@@ -303,16 +256,13 @@ nav button#MenuButton {
     background-color: #1c1e53;
     color: #fff;
 }
-
 .footer p {
     font-size: 70%;
 }
-
 #hinfo {
     font-size: 17px;
     margin-bottom: 10px;
 }
-
 .page-head {
     display: flex;
     width: 100%;
@@ -321,20 +271,16 @@ nav button#MenuButton {
     align-items: center;
     justify-content: center;
 }
-
 #abouthead {
     color: #fff;
     font-size: 30px;
 }
-
 .vimi-head {
     display: flex;
     width: 100%;
     justify-content: center;
     margin-top: 5vh;
-
 }
-
 .vision {
     display: flex;
     flex-direction: column;
@@ -347,7 +293,6 @@ nav button#MenuButton {
     border-radius: 10px;
     box-sizing: border-box;
 }
-
 .circle {
     width: 50px;
     height: 50px;
@@ -357,11 +302,9 @@ nav button#MenuButton {
     justify-content: center;
     margin-bottom: 50px;
 }
-
 #v-cont {
     font-weight: 500;
 }
-
 .vision-mission {
     display: flex;
     width: 100%;
@@ -370,84 +313,62 @@ nav button#MenuButton {
     margin-top: 10vh;
     margin-bottom: 6vh;
 }
-
 @media screen and (max-width: 768px) {
     nav {
         justify-content: space-between;
         padding: 0 42px;
-    }
-
+   }
     nav ul {
         display: none;
-    }
-
+   }
     nav.open .logo {
         display: none;
-    }
-
+   }
     nav.open ul {
         display: flex;
         font-size: 13px;
         gap: 20px;
-
-    }
-
+   }
     nav button#MenuButton {
         display: flex;
         width: 30px;
         height: 30px;
         right: 10px;
-       
-    }
-
+   }
     nav #appoinment {
         width: 100px;
-        height: 30px; 
+        height: 30px;
         font-size: 13px;
         padding: 6px;
         margin-bottom: -5vh;
         margin-left: 10vh;
         justify-content: center;
-        
-    }
-
-    .popup input[type="text"],
-    .popup input[type="date"],
-    .popup select,
-    .popup textarea
-    {
-    font-size: 13;
-    }
-
+   }
+    .popup input[type="text"], .popup input[type="date"], .popup select, .popup textarea {
+        font-size: 13;
+   }
     #hinfo {
         font-size: 14px;
         margin-bottom: 5px;
-    }
-
+   }
     .footer p {
         font-size: 12px;
-    }
-
+   }
     .vision {
         width: 40%;
         margin-left: 0;
         align-items: center;
         justify-content: center;
-
-
-    }
-
+   }
     .circle {
         width: 50px;
         height: 50px;
         margin-bottom: 50px;
-    }
-
+   }
     #v-cont {
         font-weight: 500;
         font-size: 13.5px;
-    }
-
+   }
     .vision-mission {
         width: 100%;
         justify-content: center;
@@ -455,18 +376,14 @@ nav button#MenuButton {
         margin: 0px;
         margin-top: 5vh;
         margin-bottom: 5vh;
-    }
-
+   }
     #vmhead {
         font-size: 20px;
-    }
-
+   }
     #v-head {
         font-size: medium;
         margin-bottom: 8px;
-
-    }
-
+   }
     #slidetext {
         position: absolute;
         color: rgb(255, 255, 255);
@@ -474,8 +391,7 @@ nav button#MenuButton {
         top: 15rem;
         padding: 0 1rem;
         font-size: 17px;
-    }
-
+   }
     #slide-cont {
         position: absolute;
         color: rgb(255, 255, 255);
@@ -485,31 +401,26 @@ nav button#MenuButton {
         width: 70%;
         font-weight: lighter;
         font-size: 10px;
-    }
+   }
 }
-
 @media screen and (max-width: 576px) {
-
     nav {
         font-size: 10px;
         justify-content: space-between;
         padding: 5px;
         gap: 10px;
-    }
-
+   }
     nav ul {
         gap: 10px;
         justify-content: start;
         align-items: end;
         overflow: visible;
         margin-left: -15px;
-    }
-
+   }
     nav .logo a {
         font-size: 18px;
-    }
-
-    .navigationbar #appoinment {     
+   }
+    .navigationbar #appoinment {
         width: 70px;
         height: 30px;
         font-size: 10px;
@@ -517,46 +428,33 @@ nav button#MenuButton {
         margin-bottom: -5vh;
         flex-basis: 1px;
         margin-left: 7vh;
-
-    }
-
+   }
     nav button#MenuButton{
         width: 30px;
         height: 30px;
-    }
-
-    .popup input[type="text"],
-    .popup input[type="date"],
-    .popup select,
-    .popup textarea
-    {
-    font-size: 10px;
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    
-    }
-
+   }
+    .popup input[type="text"], .popup input[type="date"], .popup select, .popup textarea {
+        font-size: 10px;
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+   }
     .popup-container{
         width: 50%;
         margin-left: 12.5rem;
         background-color: transparent;
-    }
-
+   }
     .top-content {
         font-size: 12px;
-    }
-
+   }
     #hinfo {
         font-size: 10px;
         margin-bottom: 5px;
-    }
-
+   }
     .footer p {
         font-size: 8px;
-    }
-
+   }
     #slidetext {
         position: absolute;
         color: rgb(255, 255, 255);
@@ -564,8 +462,7 @@ nav button#MenuButton {
         top: 15rem;
         padding: 0 1rem;
         font-size: 17px;
-    }
-
+   }
     #slide-cont {
         position: absolute;
         color: rgb(255, 255, 255);
@@ -575,70 +472,55 @@ nav button#MenuButton {
         width: 70%;
         font-weight: lighter;
         font-size: 10px;
-    }
-
+   }
     #introimg {
         width: 40%;
         object-fit: contain;
-    }
-
+   }
     #int {
         width: 40%;
         margin-top: 4.5vh;
         font-size: 10px;
-    }
-
+   }
     #mos {
         font-size: 18px;
-    }
-
+   }
     .card-contain {
         margin-top: 20px;
         width: 100%;
         height: auto;
-    }
-
+   }
     .card-content {
         padding: 1px;
-    }
-
+   }
     .card-content h4 {
         font-size: 12px;
         margin: 5px;
-    }
-
+   }
     .card-content p {
-
         font-size: 7px;
         line-height: 1.3;
         padding: 5px;
-    }
-
+   }
     .card {
         width: 25%;
         margin: 10px;
-    }
-
+   }
     .vision {
         width: 40%;
         margin-left: 0;
         align-items: center;
         justify-content: center;
-
-
-    }
-
+   }
     .circle {
         width: 30px;
         height: 30px;
         margin-bottom: 50px;
-    }
-
+   }
     #v-cont {
         font-weight: 500;
         font-size: 8px;
-    }
-
+   }
     .vision-mission {
         width: 100%;
         justify-content: center;
@@ -646,35 +528,27 @@ nav button#MenuButton {
         margin: 0px;
         margin-top: 5vh;
         margin-bottom: 5vh;
-    }
-
+   }
     #vmhead {
         font-size: 20px;
-    }
-
+   }
     #v-head {
         font-size: medium;
         margin-bottom: 8px;
-
-    }
-
+   }
     .card-name {
         font-size: 10px;
         margin-left: 5px;
-    }
-
+   }
     .servic-det {
         justify-content: space-around;
-    }
-
+   }
 }
-
 .servic-det {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 .gimg {
     width: 100%;
     display: block;
@@ -682,7 +556,6 @@ nav button#MenuButton {
     object-fit: cover;
     transition: transform 1000ms;
 }
-
 ul {
     list-style: none;
     margin: 10px;
@@ -692,15 +565,12 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     max-width: 100%;
     width: 100%;
-
 }
-
 figure {
     margin: 0;
     position: relative;
     overflow: hidden;
 }
-
 figure::after {
     position: absolute;
     top: 50%;
@@ -713,21 +583,17 @@ figure::after {
     transform: scale(2);
     transition: opacity 300ms;
 }
-
 @media (prefers-reduced-motion: no-preference) {
-
     figure::after {
         border-radius: 50%;
         opacity: 1;
         transform: scale(0);
         transition: transform 900ms;
-    }
-
+   }
     a:is(:hover, :focus) img {
         transform: scale(1.2);
-    }
+   }
 }
-
 #Galhead {
     color: #1c1e53;
     display: flex;
@@ -735,7 +601,6 @@ figure::after {
     justify-content: center;
     margin: 25px 25px;
 }
-
 .container {
     position: relative;
     max-width: 400px;
@@ -749,34 +614,26 @@ figure::after {
     margin-left: 15rem;
     border: 1px solid black;
 }
-
 .container header {
     font-size: 1.5rem;
     color: #333;
     font-weight: 500;
     text-align: center;
 }
-
 .container .form {
     margin-top: 30px;
 }
-
 .form .input-box {
     width: 100%;
     margin-top: 20px;
-
 }
-
 .input-box label {
     color: #333;
 }
-
 .main input::placeholder {
     font-size: 14px;
 }
-
 .form :where(.input-box input) {
-
     height: 50px;
     width: 100%;
     outline: none;
@@ -788,16 +645,13 @@ figure::after {
     padding: 0 15px;
     flex-wrap: wrap;
 }
-
 .input-box input:focus {
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
-
 .form .column {
     display: flex;
     column-gap: 15px;
 }
-
 .form button {
     height: 55px;
     width: 100%;
@@ -811,11 +665,9 @@ figure::after {
     background: rgb(130, 106, 251);
     border-radius: 18px;
 }
-
 .form button:hover {
     background: rgb(88, 56, 250);
 }
-
 .input-box textarea {
     position: relative;
     height: 100px;
@@ -829,188 +681,140 @@ figure::after {
     padding: 0 15px;
     padding: 10px;
 }
-
 @media screen and (max-width: 1000px) {
     .form .column {
-
         width: max-content;
-    }
-
+   }
     .container {
         margin: 25px;
         height: max-content;
         padding: 20px;
-
-    }
-
+   }
     .form .column {
         display: block;
-    }
-
+   }
     .main {
         flex-wrap: nowrap;
         margin-left: 0px;
-    }
-
+   }
 }
-
-
-
 @media screen and (max-width: 768px) {
     .form .column {
-
         width: max-content;
-    }
-
+   }
     .container {
         margin: 25px;
         height: max-content;
         padding: 20px;
-
-    }
-
+   }
     .form .column {
         display: block;
-    }
-
+   }
     .main {
         flex-wrap: wrap;
         margin-left: 0px;
-    }
-
+   }
 }
-
 @media screen and (max-width: 500px) {
     .form .column {
-
         width: max-content;
-    }
-
+   }
     .container {
         margin: 25px;
         height: max-content;
         padding: 20px;
-
-    }
-
+   }
     .form .column {
         display: block;
-    }
-
+   }
     .main {
         flex-wrap: wrap;
         margin-left: 0px;
-    }
-
+   }
     .open-button{
         font-size: 10px;
         max-width: 100px;
         height: 50px;
         padding: 0;
-    }
-
+   }
 }
-
-
 .main {
     display: flex;
-
 }
-
 .sec2 {
     align-items: flex-start;
     justify-content: center;
     margin: 30px 10px;
 }
-
 .info {
     margin-top: 20px;
 }
-
 .our-info {
     margin-top: 50px;
 }
-
-.our-info #mail,
-#no,
-#loc {
+.our-info #mail, #no, #loc {
     font-size: 14px;
     display: flex;
     justify-content: flex-start;
     gap: 20px;
     line-height: 40px;
 }
-
 /* Button fixed at the bottom of the page */
 .open-button {
-  background-color: #555;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-  opacity: 0.9;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width:fit-content ;
-  z-index: 1;
-  border-radius: 15px;
-  border: 0.5px solid white;
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.9;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width:fit-content ;
+    z-index: 1;
+    border-radius: 15px;
+    border: 0.5px solid white;
 }
-
 .open-button:hover {
-  opacity: 1;
-  transition: 0.5ms ease;
+    opacity: 1;
+    transition: 0.5ms ease;
 }
-
 /* The popup form - hidden by default */
 .form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  z-index: 5;
-  
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 5;
 }
-
 /* Add styles to the form container */
 .form-container {
-  padding: 10px;
-  background-color: white;
-  height: 82vh;
-  border: 1.5px solid black;
-  border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+    height: 82vh;
+    border: 1.5px solid black;
+    border-radius: 8px;
 }
-
 .form-container h1 {
     display: flex;
     font-size: 18px;
     justify-content: center;
 }
-
 @media screen and (max-width: 500px) {
     .form-container {
         height: 75vh;
-      }
-
-      
+   }
     .form-container label {
         display: block;
         margin-bottom: 2px;
-    }
-    
-    .form-container input,select
-    {
+   }
+    .form-container input,select {
         width: 100%;
         height: 30px;
         font-size: 8.5px;
-    }
-    
+   }
     .form-container .btn {
         width: 100%;
         height: 30px;
-      }
+   }
 }
 /* Full-width input fields */
-
-
-

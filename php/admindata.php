@@ -1,6 +1,10 @@
 
 <style>
 
+#contact{
+	margin-left:70rem;
+}
+
 h2{
 margin-left: 30rem;
 }
@@ -57,8 +61,10 @@ tr {
 	<th>Delete</th>
 	<th>Update</th>
 	<th>Insert</th>
-
 </tr>
+
+<a id="contact" href="contactinfo.php">Check Contact Informations</a><br><br>
+<a id="contact" href="../index.html">GO To Home Page</a>
 
 <?php
 
@@ -81,7 +87,7 @@ while($row = mysqli_fetch_assoc($result))
 	<td><?php print $row["Time"]; ?></td>
 	<td><a href="delete.php?id=<?php print $row["Doc_ID"]; ?>">Delete</a></td>
 	<td><a href="updateform.php?id=<?php print $row["Doc_ID"]; ?>">Update</a></td>
-	<td><a href="insertcourse.php?id=<?php print $row["Doc_ID"]; ?>">Insert</a></td>
+	<td><a href="insertdoctor.php?id=<?php print $row["Doc_ID"]; ?>">Insert</a></td>
 </tr>
 
 <?php

@@ -15,7 +15,9 @@ $result = mysqli_query($connection, $query);
 if ($result)
 {
 	echo '<script>alert("Successfully Appoinment Submited!");</script>';
-	echo '<script>window.location.href = "index.html";</script>';
+	echo '<script>window.location.href = "../index.html";</script>';
+	
+
 ?>
 
 <?php

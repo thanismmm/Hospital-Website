@@ -12,7 +12,7 @@ if ($result)
 {
 	print "Data Deleted successfully";
 ?>
-	<p><a href="testdata.php">Check All Courses Here</a></p>
+	<p><a href="admindata.php">Check Here</a></p>
 <?php
 }
 ?>
