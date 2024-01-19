@@ -95,8 +95,9 @@ nav #appoinment {
     border: 1px solid #1c1e53;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 20vh;
-    font-size: 15px;
+    width: fit-content;
+    font-size: 14px;
+    width: max-content;
 }
 
 nav #appoinment:hover {
@@ -978,6 +979,12 @@ figure::after {
   height: 82vh;
   border: 1.5px solid black;
   border-radius: 8px;
+}
+
+.form-container h1 {
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
 }
 
 @media screen and (max-width: 500px) {

@@ -1,6 +1,6 @@
 <?php
 
-$uid = $_POST['email'];
+$uid = $_POST['userName'];
 $pword = $_POST['password'];
 
 require_once("dbcon.php");

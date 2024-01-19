@@ -58,8 +58,8 @@
 
               <!-- The form -->
               <div class="form-popup" id="myForm">
-                <form action="action_page.php" class="form-container">
-                  <h1>Login</h1>
+                <form action="appointInsert.php" method="post" class="form-container" >
+                  <h1>Get Appointment</h1>
 
                   <label for="name">Name</label>
                   <input type="text" id="name" name="name" required />
@@ -77,15 +77,15 @@
 
                   <label for="doctor">Choose a Doctor</label>
                   <select name="doctor" id="doctor">
-                    <option value="name1">Dr.Mohammed Gafoor</option>
-                    <option value="name1">Dr.Mohammed Razik</option>
-                    <option value="name1">Dr.Mohammed Riswan</option>
+                    <option value="Dr.Mohammed Gafoor">Dr.Mohammed Gafoor</option>
+                    <option value="Dr.Mohammed Razik">Dr.Mohammed Razik</option>
+                    <option value="Dr.Mohammed Riswan">Dr.Mohammed Riswan</option>
                   </select>
 
                   <label for="doctor">Appoinment Date</label>
-                  <input type="date" />
+                  <input type="date" name="date"/>
 
-                  <button type="submit" class="btn">Login</button>
+                  <button type="submit" class="btn">Submit</button>
                   <button type="button" class="btn cancel" onclick="closeForm()">
                     Close
                   </button>
